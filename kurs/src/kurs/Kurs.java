@@ -6,7 +6,7 @@
 package kurs;
 
 /**
- *
+ *Magnus Leray testar hur det kommer att se ut när allt fungerar
  * @author macbook
  */
 public class Kurs {
