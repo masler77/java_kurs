@@ -5,17 +5,27 @@
  */
 package java_kurs;
 
+import java.sql.*;
+
 /**
  *
  * @author macbook
  */
 public class Java_kurs {
+public static final String USERNAME = "leray";
+	public static final String PASSWORD = "";
+	public static final String CONN_STRING = 
+				"jdbc:mysql://leray.se/mysql";
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+Connection conn = null;        
+
+try {
+conn = DriverManager.getConnection(CONN_STRING,USERNAME,PASSWORD);
+    System.out.println("Connected to MySql DB");
+}catch(SQLException e){System.err.println(e); }
+// TODO code application logic here
     }
     
 }
